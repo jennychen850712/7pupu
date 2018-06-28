@@ -37,9 +37,10 @@
             color: #2d2d2d;
             text-decoration: none;
             border-bottom: 1px solid #c06b0e;
+            cursor: pointer;
         }
 
-        /*記得填要什麼*/
+
 
         @media screen and (max-width: 768px) {
             header {
@@ -91,54 +92,36 @@
 
         }
 
-        /*不確定要不要*/
+
 
         @media screen and (max-width: 768px) {
             article>figure {
-                width: 360px;
+                width: 305px;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .float-right {
-                float: left;
-                width: 240px;
-                margin-top: 40px;
-                margin-right: 40px;
-                margin-bottom: 50px;
-            }
+
         }
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             article>figure {
-                width: 678px;
+                width: 550px;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .float-right {
-                float: left;
-                width: 300px;
-                margin-top: 40px;
-                margin-right: 40px;
-                margin-bottom: 50px;
-            }
+
         }
 
         @media screen and (min-width: 1024px) {
             article>figure {
-                width: 900px;
+                width: 700px;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .float-right {
-                float: right;
-                width: 360px;
-                margin-top: 40px;
-                margin-left: 40px;
-                margin-bottom: 50px;
-            }
+
         }
 
 
@@ -277,43 +260,214 @@
             line-height: 1.5;
         }
 
-        /* footer style */
+      
+/*新的footer*/
 
         .footer-background {
-            position: relative;
+            
             background-color: #44642a;
             width: 100%;
-            height: 300px
+            height: 300px; 
+          
+           
         }
 
-        .surprise-position {
+
+        .footer{
+        position: relative;
+        width:750px;
+        height:210px;
+        margin-left:auto;margin-right:auto;
+      
+           margin-top:50px
+        
+     
+        }
+
+        .aboutme-position {
             position: absolute;
-            left: 360px;
-            top: 50px;
+            left: 0px;
+            top: 0px;
+            max-width: 350px;
+
+        }
+        .footer-line-position {
+            position: absolute;
+            left: 400px;
+            top: 0px;
             max-width: 10px;
+           
+        }
+        
+        .fb-position {
+            position: absolute;
+            right:120px;
+            top: 0px;
+            max-width: 50px;
+        }
+
+        .fb {
+            position: absolute;
+           right:0px;
+            top: 15px;
 
         }
 
-        .contact-me {
+        .ig-position {
             position: absolute;
-            left: 390px;
-            top: 63px;
+            right:120px;
+            top: 100px;
+            max-width: 50px;
+        }
+
+        .ig {
+            position: absolute;
+            right:0px;
+            top: 115px;
 
         }
 
-        .q-position {
+ @media screen and (max-width: 768px) {
+    .footer-background {
+            
+            background-color: #44642a;
+            width: 100%;
+            height: 135px;
+           
+            
+        }
+        .footer{
+        position: relative;
+        width:270px;
+        height:75px;
+        margin-left:auto;margin-right:auto;
+     
+        }
+
+        .aboutme-position {
             position: absolute;
-            left: 352px;
-            top: 150px;
+            left: 0px;
+            top: 0px;
+            max-width: 120px;
+
+        }
+        .footer-line-position {
+            position: absolute;
+            left: 135px;
+            top: 0px;
+            max-width: 5px;
+           
+        }
+        
+        .fb-position {
+            position: absolute;
+            right:65px;
+            top: 0px;
             max-width: 25px;
         }
 
-        .about-me {
+        .fb {
             position: absolute;
-            left: 390px;
-            top: 163px;
+           right:0px;
+            top: 5px;
+            font-size: 5px
 
         }
+
+        .ig-position {
+            position: absolute;
+            right:65px;
+            top: 40px;
+            max-width: 25px;
+        }
+
+        .ig {
+            position: absolute;
+            right:0px;
+            top: 48px;    
+            font-size: 5px
+
+        }
+}
+
+
+   @media screen and (min-width: 768px) and (max-width: 1023px) {.footer-background {
+            
+            background-color: #44642a;
+            width: 100%;
+            height: 250px;
+           
+        }
+
+
+        .footer{
+        position: relative;
+        width:550px;
+        height:150px;
+        margin-left:auto;margin-right:auto;
+     
+        }
+
+        .aboutme-position {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            max-width: 280px;
+
+        }
+        .footer-line-position {
+            position: absolute;
+            left: 300px;
+            top: 0px;
+            max-width: 10px;
+           
+        }
+        
+        .fb-position {
+            position: absolute;
+            right:80px;
+            top: 0px;
+            max-width: 50px;
+        }
+
+        .fb {
+            position: absolute;
+           right:0px;
+            top: 18px;
+
+        }
+
+        .ig-position {
+            position: absolute;
+            right:80px;
+            top: 100px;
+            max-width: 50px;
+        }
+
+        .ig {
+            position: absolute;
+            right:0px;
+            top: 118px;
+
+        }}
+
+
+
+
+
+
+
+          /* 原本的footer style
+
+        .aboutme-position {
+            position: absolute;
+            left: 200px;
+            top: 50px;
+            max-width: 350px;
+
+        }
+
+
 
 
         .footer-line-position {
@@ -355,7 +509,7 @@
 
         }
 
-        /*footer的響應式（平板和桌機）還沒做完 */
+
 
         @media screen and (max-width: 768px) {
             .footer-background {
@@ -363,33 +517,14 @@
                 height: 135px
             }
 
-            .surprise-position {
+            .aboutme-position {
                 position: absolute;
-                left: 50px;
-                top: 35px;
-                width: 5px
-            }
-
-            .contact-me {
-                position: absolute;
-                left: 70px;
+                left: 30px;
                 top: 40px;
-                font-size: 10px
+                max-width: 120px;
+
             }
 
-            .q-position {
-                position: absolute;
-                left: 47px;
-                top: 75px;
-                width: 15px
-            }
-
-            .about-me {
-                position: absolute;
-                left: 70px;
-                top: 80px;
-                font-size: 10px
-            }
 
 
             .footer-line-position {
@@ -435,97 +570,63 @@
         }
 
 
-        @media screen and (min-width: 768px) and (max-width: 1023px) {}
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-        @media screen and (min-width: 1024px) {}
-
-
-
-
-
-
-        /* 原本的footer
-        footer {
-            background-color: #bfbfbf;
-            min-height: 300px;
-        }
-
-        footer>table {
-            border-spacing: 45px;
-            width: 100%;
-        }
-
-        .footer-circle1 {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #397a69;
-            margin: 0 auto;
-        }
-
-        .footer-circle2 {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #cc8e24;
-            margin: 0 auto;
-        }
-
-        .footer-circle3 {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #781c20;
-            margin: 0 auto;
-        }
-
-        .footer-text {
-            margin-top: 15px;
-            font-size: 18px;
-            text-align: center;
-            color: #777;
-        }
-
-        .embed-box {
-            position: relative;
-            margin-top: 60px;
-        }
-
-        .embed-box>iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-
-
-        @media screen and (max-width: 767px) {
-            table.hidden-on-mobile {
-                display: none;
+            .footer-background {
+                position: relative;
+                height: 250px
             }
 
-            table.shown-on-mobile {
-                display: table;
-            }
-        }
+            .aboutme-position {
+                position: absolute;
+                left: 150px;
+                top: 45px;
+                max-width: 250px;
 
-        @media screen and (min-width: 768px) {
-            table.hidden-on-mobile {
-                display: table;
-                max-width: 770px;
-                margin-left: auto;
-                margin-right: auto;
             }
 
-            table.shown-on-mobile {
-                display: none;
+
+
+            .footer-line-position {
+                position: absolute;
+                left: 170px;
+                top: 20px;
+                height: 70px
+            }
+
+            .fb-position {
+                position: absolute;
+                left: 200px;
+                top: 30px;
+                width: 25px;
+
+            }
+
+            .fb {
+                position: absolute;
+                left: 240px;
+                top: 30px;
+                font-size: 9px
+            }
+
+
+
+
+            .ig-position {
+                position: absolute;
+                left: 200px;
+                top: 60px;
+                width: 25px
+            }
+
+            .ig {
+                position: absolute;
+                left: 240px;
+                top: 60px;
+                font-size: 9px
             }
         }
-
-        .flex-footer {
-            display: flex;
-            justify-content: space-between;
-        }
-        */
+         */
     </style>
 
 </head>
@@ -557,16 +658,13 @@
             <img src="title2.png" style="display:block;margin-top:-50px;margin-left:auto;margin-right:auto; width:55%"></img>
         </div>
         <article>
-            <!--
-        <header>
-		<h1 style="padding-top:40px">下一場教育大革命？公辦公營實驗教育轉型之路</h1>
-        </header>
-        -->
+
             <div style="margin-top:50px;margin-bottom:15px">
 
 
                 <span class="author" style="font-weight: bold;">文／</span>
-                <a>周瑩慈、陳亭蓉、劉祐齊、曾智怡、陳詩妤綜合報導</a>
+                <a href="http://www.unews.nccu.edu.tw/unews/%E4%B8%8B%E4%B8%80%E5%A0%B4%E6%95%99%E8%82%B2%E5%A4%A7%E9%9D%A9%E5%91%BD%EF%BC%9F%E5%85%AC%E8%BE%A6%E5%85%AC%E7%87%9F%E5%AF%A6%E9%A9%97%E6%95%99%E8%82%B2%E8%BD%89%E5%9E%8B%E4%B9%8B%E8%B7%AF/"
+                    target="_blank">周瑩慈、陳亭蓉、劉祐齊、曾智怡、陳詩妤綜合報導</a>
 
             </div>
 
@@ -592,13 +690,13 @@
                 今年九月份即將開始招生的台北市和平實驗國民小學，是台北市的第一所公辦公營實驗小學。嘗試以主題式課程，突破過往分科教學的框架，成為家長心目中的明星學校。為何實驗教育三法通過兩年後，台北市才邁出第一步？「比較好的籌劃，一步一步站穩了，才可以往前走。」和平實小校長黃志順表示，轉型過程面臨的困難很多，兩年來在做充實準備。
             </p>
 
-            <div style="width:100%">
-                <div style="margin-top:40px">
-                    <img src="taiwan.png" alt="實驗教育公辦公營小學全台分布圖" width="100%" />
-                </div>
-                <figcaption>資料來源：親子天下（統計至2017年1月6日） 製表：陳亭蓉
-                </figcaption>
-            </div>
+            <figure style="margin-top:40px">
+
+                <img src="taiwan.png" alt="實驗教育公辦公營小學全台分布圖" width="100%" style="float:left">
+            </figure>
+            <figcaption>資料來源：親子天下（統計至2017年1月6日） 製表：陳亭蓉
+            </figcaption>
+
             <h2>
                 公辦公營起步難 凝聚共識為首要
             </h2>
@@ -622,10 +720,11 @@
                 學校、老師和家長三方的溝通也是一大挑戰。作為全台第一間原住民實驗小學，台中市博屋瑪國民小學在轉型前兩、三年便不斷與社區和校內老師進行溝通，「你要把學校想法很清楚、具體地告訴老師與家長。」博屋瑪國小教務主任林志宏認為急就章不利於長遠發展，而各方支持也是轉型成功與否的要因。舉例而言，並非所有縣市都有足夠資金成立相關教育中心（例如屏東縣原住民族課程發展中心），實驗課程需依賴學校老師產出，若無共識，推動起來將困難重重。
             </p>
 
-            <div style="margin-top:40px">
-                <img src="riverbank.png" alt="實驗小學戶外課程" width="100%" />
-                <figcaption>由於地緣優勢，東汴國小學生親自向別校學生解說生態知識，小朋友們正在觀察拉氏清溪蟹。圖／東汴國小提供</figcaption>
-            </div>
+            <figure style="margin-top:40px">
+                <img src="riverbank.png" alt="實驗小學戶外課程" width="100%">
+            </figure>
+            <figcaption>由於地緣優勢，東汴國小學生親自向別校學生解說生態知識，小朋友們正在觀察拉氏清溪蟹。圖／東汴國小提供</figcaption>
+
             <p>
                 和平實驗國民小學校長黃志順表示，「家長是關鍵」。家長是否能理解學校的想法以及預期的做法，會影響到他們是否參與及支持學校之後的安排。為了確認家長清楚校方的作為與規劃，後續能建立親師之間的合作，和平國小舉辦多次說明會，入學時也安排校方跟家長有深入面談的機會。
 
@@ -634,13 +733,13 @@
             <p>
                 此外，還有銜接問題。目前實驗教育仍非主流，有些家長擔心孩子在畢業後升學至一般學校時課業的銜接及環境適應，黃志順對此表示，一方面107學年度附近會有兩所實驗教育國中成立，可以直接銜接；另一方面，培養適應力才是學習過程中最重要的，「其實我覺得孩子的教育最重要的不是去幫他鋪後面的路，而是讓他在學習歷程中長得夠強壯。」而目前大學已有特殊選材管道，例如國立清華大學的拾穗計畫，只要有高中同等學歷證明，學生便可以自身特殊才能申請進入學校。以106學年度清大特殊選才為例，錄取率低於5%的正取生中，有一成是接受實驗教育的學生。
             </p>
-            <div style="width:100%">
-                <div style="margin-top:40px">
-                    <img src="taiya.png" alt="實驗小學文化課程" width="100%" />
-                </div>
-                <figcaption>博屋瑪國小是全台第一所原住民實驗小學，課程中有三分之一為泰雅文化課，例如教導學生吹奏泰雅族傳統樂器口簧琴。圖／博屋瑪國小提供
-                </figcaption>
-            </div>
+            <figure style="margin-top:40px">
+
+                <img src="taiya.png" alt="實驗小學文化課程" width="100%">
+            </figure>
+            <figcaption>博屋瑪國小是全台第一所原住民實驗小學，課程中有三分之一為泰雅文化課，例如教導學生吹奏泰雅族傳統樂器口簧琴。圖／博屋瑪國小提供
+            </figcaption>
+
             <h2>
                 實驗教育應步步踏實 引領傳統教育走出新篇章
             </h2>
@@ -665,84 +764,44 @@
             <div class="related-text" style="margin-top:40px;margin-bottom:20px;font-weight:900">延伸閱讀</div>
 
             <ul class="related-items" style="padding-bottom:40px">
-                <li class="related-item">
-                    <img src="DWI.png"></img>
-                    <div>延伸閱讀一：治酒駕用重典？預防勝處罰</div>
-                </li>
-                <li class="related-item">
-                    <img src="book.jpg"></img>
-                    <div>延伸閱讀二：買書還是借書？公共借閱權守護本土創作出版</div>
-                </li>
+                <a href="https://jennychen850712.github.io/7pupu/animation/index.html">
+                    <li class="related-item">
+                        <img src="DWI.png"></img>
+                        <div>延伸閱讀一：治酒駕用重典？預防勝處罰</div>
+                    </li>
+                </a>
+                <a href="http://www.unews.nccu.edu.tw/unews/%E8%B2%B7%E6%9B%B8%E9%82%84%E6%98%AF%E5%80%9F%E6%9B%B8%EF%BC%9F%E5%85%AC%E5%85%B1%E5%80%9F%E9%96%B1%E6%AC%8A%E5%AE%88%E8%AD%B7%E6%9C%AC%E5%9C%9F%E5%89%B5%E4%BD%9C%E5%87%BA%E7%89%88/">
+                    <li class="related-item">
+                        <img src="book.jpg"></img>
+                        <div>延伸閱讀二：買書還是借書？公共借閱權守護本土創作出版</div>
+                    </li>
+                </a>
             </ul>
 
         </article>
         <div class="footer-background">
 
-            <img src="！.png" class="surprise-position"></img>
-            <div style="display:inline-block;color:white" class="contact-me">聯絡我</div>
+            <!--為什麼無法和綠色底有margin-->
+            <div class="footer" style="margin-top:50px">
+                <img src="aboutme.png" class="aboutme-position"></img>
 
 
-            <img src="？.png" class="q-position"></img>
-            <div style="display:inline-block;color:white" class="about-me">關於我</div>
+                <img src="footer-line.png" class="footer-line-position"></img>
 
-            <img src="footer-line.png" class="footer-line-position"></img>
-            <img src="fb-pic.png" class="fb-position"></img>
-            <div style="display:inline-block;color:white" class="fb">facebook</div>
-            <img src="ig-pic.png" class="ig-position"></img>
-            <div style="display:inline-block;color:white" class="ig">instagram</div>
+                <a href="https://www.facebook.com/jennychen850712">
+                    <img src="fb-pic.png" class="fb-position"></img>
+                </a>
+                <div style="display:inline-block;color:white" class="fb">facebook</div>
+
+
+                <a href="https://www.instagram.com/jennychen0712/?hl=zh-tw">
+                    <img src="ig-pic.png" class="ig-position"></img>
+                </a>
+                <div style="display:inline-block;color:white" class="ig">instagram</div>
+            </div>
         </div>
 
-        <!--
-    </div>
-    <footer style="background-color:#eeeeed">
-        <table class="shown-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle1"></div>
-                        <div class="footer-text">關於我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle2"></div>
-                        <div class="footer-text">聯絡我們</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="footer-circle3"></div>
-                        <div class="footer-text">多媒體專題</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle1"></div>
-                        <div class="footer-text">個人作品</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="hidden-on-mobile">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="footer-circle1"></div>
-                        <div class="footer-text">關於我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle2"></div>
-                        <div class="footer-text">聯絡我們</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle3"></div>
-                        <div class="footer-text">多媒體專題</div>
-                    </td>
-                    <td>
-                        <div class="footer-circle1"></div>
-                        <div class="footer-text">個人作品</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </footer>
-    -->
+
 </body>
 
 </html>

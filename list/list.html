@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <style>
+
+        /*mobile的灰底無法改變寬度或去除*/
         @media screen and (max-width: 768px) {
             header {
-                width:100%;
+                width: 100%;
                 height: 61px;
 
             }
@@ -15,10 +17,42 @@
                 width: 126px;
                 height: 39px;
                 position: absolute;
-                top:12px;
-                left:14px
+                top: 12px;
+                left: 14px
             }
+
+
+            .card-img-top {
+                width: 350px
+            }
+
+            .card-deck {
+                width: 350px
+            }
+
+            
+            .card-text{
+                width: 350px 
+            }
+
+        .card{    width: 350px }
+
+    
+
+        .cover-title{
+            width:350px
+            }
+        
+        .cover-background{
+            width:350px
         }
+
+        .article-background{ width:350px !important}
+        
+        }
+
+
+
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             header {
@@ -53,6 +87,20 @@
             top: 25px;
             right: 100px
         }
+
+        .cover-background {
+            background-color: #eeeeed;
+            width: 887px;
+            height: 2230px;
+            margin: 55px auto
+        }
+
+        .article-background{
+     background-color:#eeeeed;width:887px;margin:29px auto
+        }
+
+       .cover-title{
+           font-family:Noto Sans TC;font-size:48px;text-align:center}
 
         .flex-container {
             width: 820px;
@@ -147,26 +195,13 @@
         <!--header-->
         <div style="background-color:#eeeeed;width:100%;height:100px" class="header">
         </div>
-         <a href="file:///Users/chentingrong/Desktop/7pupu/list/list.html"><img src="longlogo.png" class="logo" style="width:auto;height:60px"></a>
+        <a href="file:///Users/chentingrong/Desktop/7pupu/list/list.html">
+            <img src="longlogo.png" class="logo" style="width:auto;height:60px">
+        </a>
         </img>
 
-        <!--<div class="flex-menu">
-            <div>
-                <a class="dropdown-item" href="#">性別</a>
-            </div>
-            <div>
-                <a class="dropdown-item" href="#">教育</a>
-            </div>
-            <div>
-                <a class="dropdown-item" href="#">體育</a>
-            </div>
-            <div>
-                <a class="dropdown-item" href="#">藝文</a>
-            </div>
-        </div>
-    -->
 
-        <!-- 下拉式選單無法融入原本的漢堡圖像 -->
+        <!-- 下拉式選單-->
         <div class="burger">
             <a class="btn btn-secondary pupu-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
@@ -181,13 +216,13 @@
             </div>
         </div>
 
-    
+
 
 
         <!--cover-->
 
-        <div style="background-color:#eeeeed;width:887px;height:2230px;margin:55px auto">
-            <div style="font-family:Noto Sans TC;font-size:48px;text-align:center">多媒體專題</div>
+        <div class="cover-background">
+            <div class="cover-title">多媒體專題</div>
             <div class="card-deck" style="width:95%;margin:0 auto">
                 <div class="card">
                     <img class="card-img-top" src="cover.png" alt="Card image cap">
@@ -207,7 +242,7 @@
             </div>
             <!--大家的文章-->
 
-            <div style="background-color:#eeeeed;width:887px;margin:29px auto">
+            <div class="article-background" >
                 <div style="font-family:Noto Sans TC;font-size:48px;text-align:center">團隊成員作品</div>
 
                 <div class="card-deck" style="margin:30px auto">
@@ -287,19 +322,27 @@
         <div style="background-color:#eeeeed;width:100%;height:131px " class="flex-container">
             <div style="display:flex;align-items:center">
                 <div class="item1"></div>
-                <a href="http://www.unews.nccu.edu.tw/"><div>關於我們</div></a> 
+                <a href="http://www.unews.nccu.edu.tw/">
+                    <div>關於我們</div>
+                </a>
             </div>
             <div style="display:flex;align-items:center">
                 <div class="item2" style="display:inline-block;vertical-align:middle"></div>
-               <a href="http://www.unews.nccu.edu.tw/%E7%88%86%E6%96%99%E5%B0%88%E7%B7%9A/"> <div style="display:inline-block;align-items:center">聯絡我們</div></a>
+                <a href="http://www.unews.nccu.edu.tw/%E7%88%86%E6%96%99%E5%B0%88%E7%B7%9A/">
+                    <div style="display:inline-block;align-items:center">聯絡我們</div>
+                </a>
             </div>
             <div style="display:flex;align-items:center">
                 <div class="item3" style="display:inline-block;vertical-align:middle"></div>
-                <a href="https://jennychen850712.github.io/7pupu/animation/index.html"><div style="display:inline-block;align-items:center">多媒體專題</div></a> 
+                <a href="https://jennychen850712.github.io/7pupu/animation/index.html">
+                    <div style="display:inline-block;align-items:center">多媒體專題</div>
+                </a>
             </div>
             <div style="display:flex;align-items:center">
                 <div class="item4" style="display:inline-block;vertical-align:middle"></div>
-                <a href="http://www.unews.nccu.edu.tw/?s=%E9%99%B3%E4%BA%AD%E8%93%89"><div style="display:inline-block;align-items:center">個人作品</div></a>
+                <a href="http://www.unews.nccu.edu.tw/?s=%E9%99%B3%E4%BA%AD%E8%93%89">
+                    <div style="display:inline-block;align-items:center">個人作品</div>
+                </a>
             </div>
         </div>
 
@@ -316,7 +359,7 @@
             crossorigin="anonymous"></script>
 
 
-           
+
 
 
 
